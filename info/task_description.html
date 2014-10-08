@@ -1,44 +1,80 @@
 <p>
-    <i>( Describe task in general )</i>
+    Braille is a tactile writing system used by the blind and the visually impaired. It
+    is traditionally written with embossed paper.
+
+    Braille characters are small rectangular blocks called cells that contain tiny palpable bumps
+    called raised dots. The number and arrangement of these dots distinguish one character from
+    another.
 </p>
 
 <p>
-    Sum two passed ints
+    We will use 6-dots Braille alphabet.
+    Each letter can be represented as a matrix 3x2, where 1 is raised dot and 0 is an empty.
 </p>
 
 <p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <img class="for_info_only" title="alphabet" src="{{MEDIA}}alphabet.svg" alt="alphabet"
+         width="700px"/>
+    <img class="for_editor_only" title="alphabet" src="{{MEDIA}}alphabet.svg" alt="alphabet"
+         width="380px"/>
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    Letters should be separated be empty column. Whitespace is two empty columns
+    (plus separator empty columns if it between letters).
+    Various formatting marks affect the values of the letters that follow them.
+    They have no direct equivalent in print. The most important in English Braille are:
+    "capital" and "number".
+</p>
+<p style="text-align: center;">
+    <img title="formating" src="{{MEDIA}}formating.svg" alt="formating" width="300px"/>
 </p>
 
+<p>
+    We will use several basic punctuation symbols:
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only" title="punctuation" src="{{MEDIA}}punctuation.svg" alt="punctuation"
+         width="650px"/>
+    <img class="for_editor_only" title="punctuation" src="{{MEDIA}}punctuation.svg" alt="punctuation"
+         width="380px"/>
+</p>
+
+<p>
+    You are given a text. And you should convert it in Braille page.
+    The page contains contains one or several lines and represented as a matrix.
+    Each line contains no more than 10 symbols (including non-printed).
+    Lines are separated by one empty row.
+    Symbols are separated by empty columns but there are no separators in begginings and ends of lines.
+    If text can be placed in one line, then page width are proportional by text length.
+    If page has more than one line, then width are maximal and the final line is appended by whitespaces.
+
+</p>
+
+<p>
+    <strong>Input: </strong> A text as a string.
+</p>
+
+<p>
+    <strong>Output: </strong> The page as a list of lists or tuple of tuples with integers (1/0).
+</p>
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    TODO
 </p>
 
 <p>
     <strong>Precondition:</strong>
-    <i>Constraints for Input</i>
+    TODO
 </p>
