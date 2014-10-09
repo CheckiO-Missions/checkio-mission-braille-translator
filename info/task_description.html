@@ -76,15 +76,25 @@
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-    </pre>
+braille_page("hello 1st World!") == (
+    (1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1),
+    (1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1),
+    (0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0),
+    (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+    (0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+    (0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0),
+    (0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0))</pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    TODO
+    Braille is an international standard and helps to read for blind peoples.
+    This concept is a basis and with various additional features can help these people
+    to read any books.
 </p>
 
 <p>
-    <strong>Precondition:</strong>
-    TODO
+    <strong>Precondition:</strong><br>
+    0 &lt; len(text)<br>
+    all(ch in string.ascii_letters + " .,!?-_0123456789" for ch in text)
 </p>
