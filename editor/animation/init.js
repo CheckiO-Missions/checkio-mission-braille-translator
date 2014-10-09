@@ -80,7 +80,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
                 var explanation = data.ext["explanation"];
 
                 var svg = new SVG($content.find(".explanation")[0]);
-                var svg2 = new SVG($content.find(".explanation2")[0]);
+//                var svg2 = new SVG($content.find(".explanation2")[0]);
                 svg.draw(rightResult);
 
                 $content.find('.output').html('&nbsp;Your result:&nbsp;' + JSON.stringify(userResult));
@@ -90,7 +90,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
                     $content.find('.answer').addClass('error');
                     $content.find('.output').addClass('error');
                     $content.find('.call').addClass('error');
-                    svg.draw(userResult, true);
+//                    svg.draw(userResult, true);
                 }
                 else {
                     $content.find('.answer').remove();
