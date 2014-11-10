@@ -14,7 +14,7 @@ PUNCTUATION = {",": convert(2), "-": convert(18), "?": convert(38),
 WHITESPACE = convert(0)
 
 
-def braille_page(text: str):
+def braille_page(text):
     return [[0, 0], [0, 0], [0, 0]]
 
 
