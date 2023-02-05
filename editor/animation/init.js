@@ -42,7 +42,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             //YOUR FUNCTION NAME
             var fname = 'braille_page';
 
-            var checkioInput = data.in;
+            var checkioInput = data.in[0];
             var checkioInputStr = fname + '(u' + JSON.stringify(checkioInput) + ')';
 
             var failError = function (dError) {
