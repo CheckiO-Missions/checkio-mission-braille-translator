@@ -10,7 +10,7 @@ Each test is dict with
 TESTS = {
     "Basics": [
         {
-            "input": "hello 1st World!",
+            "input": ["hello 1st World!"],
             "answer": [[
                            1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0,
                            0, 1,
@@ -34,12 +34,12 @@ TESTS = {
                            0, 0, 0]]
         },
         {
-            "input": "42",
+            "input": ["42"],
             "answer": [[0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0], [0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0],
                        [1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0]]
         },
         {
-            "input": "CODE",
+            "input": ["CODE"],
             "answer": [[0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0],
                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
                        [0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0]]
@@ -47,7 +47,7 @@ TESTS = {
     ],
     "Extra": [
         {
-            "input": "Lorem Ipsum",
+            "input": ["Lorem Ipsum"],
             "answer": [[
                            0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0,
                            0, 1,
@@ -71,7 +71,7 @@ TESTS = {
                            0, 0, 0]]
         },
         {
-            "input": "0123456789",
+            "input": ["0123456789"],
             "answer": [[
                            0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0,
                            0, 1,
@@ -95,7 +95,7 @@ TESTS = {
                            0, 0, 0]]
         },
         {
-            "input": "?.,!W-W_W-W!.,?",
+            "input": ["?.,!W-W_W-W!.,?"],
             "answer": [[
                            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
                            0, 1,
@@ -119,7 +119,7 @@ TESTS = {
                            0, 0, 0]]
         },
         {
-            "input": "Bla Bla Bla Bla",
+            "input": ["Bla Bla Bla Bla"],
             "answer": [[
                            0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0,
                            1, 0,
@@ -143,7 +143,7 @@ TESTS = {
                            0, 0, 0]]
         },
         {
-            "input": "Double  Space",
+            "input": ["Double  Space"],
             "answer": [[
                            0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0,
                            0, 0,
@@ -167,7 +167,7 @@ TESTS = {
                            0, 0, 0]]
         },
         {
-            "input": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness!",
+            "input": ["But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness!"],
             "answer": [
                 [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1,
                  0],
@@ -385,7 +385,7 @@ TESTS = {
                  0]]
         },
         {
-            "input": "Braille is an international concept",
+            "input": ["Braille is an international concept"],
             "answer": [[
                        0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0,
                        0, 0, 1], [
@@ -419,7 +419,7 @@ TESTS = {
                        0, 0, 0]]
         },
         {
-            "input": "We will use a 6-dots Braille alphabet. Each letter can be represented as a 3x2 matrix where 1 is a raised dot and 0 is an empty space.",
+            "input": ["We will use a 6-dots Braille alphabet. Each letter can be represented as a 3x2 matrix where 1 is a raised dot and 0 is an empty space."],
             "answer": [[
                        0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
                        0, 1, 0], [

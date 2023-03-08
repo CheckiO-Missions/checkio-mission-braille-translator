@@ -1,5 +1,5 @@
 <p>
-    <a href="https://en.wikipedia.org/wiki/Braille">Braille</a> is a tactile writing system used by the blind and the visually impaired. It is
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Braille">Braille</a> is a tactile writing system used by the blind and the visually impaired. It is
     traditionally written with embossed paper. Braille characters are small rectangular blocks,
     called cells, which contain tiny palpable bumps called raised dots. The number and arrangement
     of these dots distinguish one character from another.
@@ -28,7 +28,7 @@
     These marks work as "shift" - only for a follow letter.
 </p>
 <p style="text-align: center;">
-    <img title="formating" src="{{MEDIA}}formating.svg" alt="formating" width="300px"/>
+    <img title="formatting" src="{{MEDIA}}formating.svg" alt="formatting" width="300px"/>
 </p>
 
 <p>
@@ -64,38 +64,32 @@
 </p>
 
 <p>
-    <strong>Input: </strong> A text as a string.
+    <strong>Input:</strong> A text as a string.
 </p>
 
 <p>
-    <strong>Output: </strong> The page as a list of lists or tuple of tuples with integers (1/0).
+    <strong>Output:</strong> The page as a{% if is_js %}n array of arrays with numbers{% else %} list of lists with integers{% endif %} (1/0).
 </p>
 
 
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Examples:</strong>
     </p>
-    <pre class="brush: python">
-braille_page("hello 1st World!") == (
-    (1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1),
-    (1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1),
-    (0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0),
-    (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-    (0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-    (0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0),
-    (0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0))</pre>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    Braille is an international concept which allow blind people to read written text. The script
-    which you will write for this mission would be useful when parsing braille text and formatting
-    it for printing, or it could be used to translate existing text into braille for others.
+    <strong>How it is used:</strong>
+    <i>
+        Braille is an international concept which allow blind people to read written text. The script which you will write for this mission would be useful when parsing braille text and formatting it for printing, or it could be used to translate existing text into braille for others.
+    </i>
 </p>
 
 <p>
-    <strong>Precondition:</strong><br>
-    0 &lt; len(text)<br>
-    all(ch in string.ascii_letters + " .,!?-_0123456789" for ch in text)
+    <strong>Preconditions:</strong>
+    <ul>
+        <li><i>0 &lt; len(text);</i></li>
+        <li><i>all(ch in string.ascii_letters + " .,!?-_0123456789" for ch in text).</i></li>
+    </ul>
 </p>
